@@ -37,7 +37,13 @@ extern "C" {
 
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
-
+typedef struct _STM32_GPIO_STRUCT_
+{
+	GPIO_TypeDef *port;
+	uint16_t pin;
+} gpio_struct_t;
+extern volatile _Bool os_running;
+extern volatile _Bool standalone;
 /* USER CODE END ET */
 
 /* Exported constants --------------------------------------------------------*/
@@ -47,7 +53,7 @@ extern "C" {
 
 /* Exported macro ------------------------------------------------------------*/
 /* USER CODE BEGIN EM */
-
+#define GET_IDX(varx, vary, varw)	( (vary * varw) + varx )
 /* USER CODE END EM */
 
 /* Exported functions prototypes ---------------------------------------------*/
