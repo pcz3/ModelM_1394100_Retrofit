@@ -52,6 +52,9 @@
 									<listOptionValue builtIn="false" value="../USB_DEVICE/App"/>
 									<listOptionValue builtIn="false" value="../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS"/>
 									<listOptionValue builtIn="false" value="../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Src/Keyboard&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Src/UsbInterface&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Src/Utilities&quot;"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.1579178800" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
 							</tool>
