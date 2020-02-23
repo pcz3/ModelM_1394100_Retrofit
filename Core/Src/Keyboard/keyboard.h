@@ -33,14 +33,13 @@ typedef struct _KEYBOARD_KEY_S_
 	GPIO_PinState tempState;/* 0 is not pressed, 1 is pressed (for debouncing*/
 	_Bool stateChanged;		/* 0 is no change since last update, 1 is has changed */
 	uint32_t lastTrigger;	/* Time stamp at which the key was last pressed */
-	uint16_t reportIndex;
+	uint16_t reportIndex;	/* Current index in HID report */
 } key_struct_t;
 
 typedef struct _KEYBOARD_MATRIX_S_
 {
 	uint8_t numRows;		/* Number of rows to be scanned */
 	uint8_t numCols;		/* Number of columns to be scanned */
-	GPIO_TypeDef *rowPort;	/* Better performance if all rows are on one port */
 	gpio_struct_t **rowPins;/* Pointer to array of row pins */
 	gpio_struct_t **colPins;/* Pointer to array of column pins */
 	key_struct_t **keys;	/* Pointer to base address of key array */
