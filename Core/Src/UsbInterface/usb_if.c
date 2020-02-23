@@ -18,6 +18,9 @@
 
 /* Defines -------------------------------------------------------------------*/
 
+/* Global variables ---------------------------------------------------------*/
+extern USBD_HandleTypeDef hUsbDeviceFS;
+
 /* Private variables ---------------------------------------------------------*/
 static usb_hid_kb_rpt_t hidKeyboard;
 
